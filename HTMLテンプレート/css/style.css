@@ -11,7 +11,7 @@ header
     z-index: 5;
     width: 100%;
     background-color: rgb(255, 194, 80);
-    height: 100px;
+    height: 120px;
     padding: 10px 0;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
 }
@@ -63,7 +63,6 @@ header
 }
 
 .header_navi_area li {
-    
 }
 
 .header_navi_area li:not(:first-child) {
@@ -76,7 +75,7 @@ header
 }
 
 .header_content_bottom {
-    
+    margin-top: 20px;
 }
 
 .search_list {
@@ -86,7 +85,14 @@ header
 }
 
 .search_list li {
+}
 
+.category {
+    position: relative;
+}
+
+.category:hover .gnavi_lists {
+    transform: scaleY(1);
 }
 
 .search_list li:not(:first-child) {
@@ -98,6 +104,57 @@ header
     text-decoration: none;
 }
 
+/* グローバルナビゲーション */
+
+.gnavi_lists {
+    position: absolute;
+    /* padding: 5px; */
+    width: 100%;
+    top: 25px;
+    left: 0;
+    background-color: rgb(255, 194, 80);
+    transform: scaleY(0);
+    transform-origin: center top;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.gnavi_list {
+    text-align: center;
+    margin-left: 0 !important;
+    height: 100%;
+    padding: 5px 0;
+    transition: ease 0.3s;
+}
+
+.gnavi_list:hover {
+    background-color: #fff;
+}
+    
+.gnavi_list:hover a {
+    color: rgb(255, 194, 80);
+}
+
+.gnavi_list:hover .gnavi_lists {
+    transform: scaleY(1);
+}
+
+.gnavi_list:not(:first-child) {
+    border-top: solid white 1px;
+    width: 100%;
+}
+
+.gnavi_list a {
+    width: 100%;
+    transition: ease 0.3s;
+}
+
+.gnavi_list a:hover {
+    
+}
+
+.gnavi_list a:hover .gnavi_list {
+}
 
 /***************************
 itemList
@@ -108,18 +165,39 @@ itemList
 }
 
 .item_container {
-    
 }
 
+.section_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5em; /*文字周りの余白*/
+    background: #fff0dd; /*背景色*/
+    border-left: solid 5px #ffaf58; /*左線（実線 太さ 色）*/
+}
+    
 .item_title {
     text-align: center;
     font-size: 40px;
-    background-color: rgb(255, 194, 80);
-    color: white;
-    padding: 10px 0;padding: 0.5em;/*文字周りの余白*/
-    color: #494949;/*文字色*/
-    background: #fffaf4;/*背景色*/
-    border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+    color: #494949; 
+}
+
+.section_links {
+
+}
+
+.section_links a {
+    color: #494949; 
+    text-decoration: none;
+    transition: ease 0.3s;
+}
+
+.section_links a:hover {
+    color: rgb(255, 194, 80);
+}
+
+.section_links a:not(:first-child) {
+    margin-left: 20px;
 }
 
 .item_list {
@@ -165,7 +243,6 @@ itemList
 }
 
 .item_price {
-
 }
 
 /***************************
@@ -173,18 +250,82 @@ footer
 ***************************/
 
 .footer {
+    position: relative;
     background-color: rgb(255, 194, 80);
     color: white;
-    height: 100px;
     text-align: center;
-    padding: 7px;
+    padding: 20px;
     margin-top: 50px;
 }
 
 .footer-container {
+}
 
+.footer-navi {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-navi li {
+
+}
+
+.footer-navi li:not(:first-child) {
+    margin-left: 40px;
+}
+
+.footer-navi li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .copyright {
-
+    display: block;
+    margin-top: 30px;
 }
+
+
+/***************************
+ページトップボタン
+***************************/
+
+.page-top-btn {
+    position: fixed;
+    background-color: rgb(255, 194, 80);
+    width: 100px;
+    height: 100px;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
+}
+
+.page-top-btn-link {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.page-top-btn-link a {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    transition: ease 0.3s;
+    border-radius: 50%;
+}
+
+.page-top-btn-link a:hover {
+    background-color: #fff;
+    color: rgb(255, 194, 80);
+} 

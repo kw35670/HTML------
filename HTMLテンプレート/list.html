@@ -8,228 +8,241 @@
         <link rel="stylesheet" type="text/css" href="./css/reset.css" />
         <link rel="stylesheet" type="text/css" href="./css/common.css" />
         <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <link rel="stylesheet" type="text/css" href="./css/loading-bar.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
         <!-- JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js" defer></script>
         <script src="./js/main.js" defer></script>
         <title>商品一覧 | シェアードショップ</title>
     </head>
-    <body>
-        <header class="header">
-            <div class="container header_container">
-                <div class="header_content_top">
-                    <h1 class="site_title">道見知 -DOMICIL-</h1>
-                    <form class="search-form" action="#" method="get">
-                        <input
-                            class="search-text"
-                            type="text"
-                            placeholder="検索"
-                        />
-                        <button class="search-btn" type="submit">検索</button>
-                    </form>
-                    <ul class="header_navi_area">
+    <body id="body">
+        <div id="loading-img-container">
+            <!-- <img class="loading-img" src="./images/かぼちゃ（割れる前）.PNG" alt="">
+            <img class="loading-img" src="./images/かぼちゃ（割れた後）.PNG" alt=""> -->
+            <img class="loading-img" src="./images/a.gif" alt="">
+        </div>
+        
+        <div class="page-loader-container">
+
+            <header class="header">
+                <div class="container header_container">
+                    <div class="header_content_top">
+                        <h1 class="site_title">道見知 -DOMICIL-</h1>
+                        <form class="search-form" action="#" method="get">
+                            <input
+                                class="search-text"
+                                type="text"
+                                placeholder="検索"
+                            />
+                            <button class="search-btn" type="submit">検索</button>
+                        </form>
+                        <ul class="header_navi_area">
+                            <li class="line"><a href="#">トップ</a></li>
+                            <li class="line"><a href="#">商品一覧</a></li>
+                            <li class="line"><a href="#">買い物かご</a></li>
+                            <li class="line">
+                                <a href="http://localhost:55000/shared_shop/login"
+                                    >ログイン</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header_content_bottom">
+                        <ul class="search_list">
+                            <li class="category">
+                                <a href="">カテゴリ検索</a>
+                                <!-- グローバルナビゲーション -->
+                                <ul class="gnavi_lists">
+                                    <li class="gnavi_list">
+                                        <a href="#">カテゴリ</a>
+                                    </li>
+                                    <li class="gnavi_list">
+                                        <a href="#">カテゴリ</a>
+                                    </li>
+                                    <li class="gnavi_list">
+                                        <a href="#">カテゴリ</a>
+                                    </li>
+                                    <li class="gnavi_list">
+                                        <a href="#">カテゴリ</a>
+                                    </li>
+                                    <li class="gnavi_list">
+                                        <a href="#">カテゴリ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="line"><a href="">セール品検索</a></li>
+                            <li class="line"><a href="">規格外商品検索</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+    
+            <section class="section section_item">
+                <div class="container item_container">
+                    <div class="section_title">
+                        <h2 class="title item_title">商品一覧</h2>
+                        <div class="section_links">
+                            <a href="#">新着順</a>
+                            <a href="#">売上順</a>
+                        </div>
+                    </div>
+                    <ul class="item_list">
+                        <li>
+                            <a href="#">
+                                <img
+                                    class="item_img"
+                                    src="./images/apple.jpg"
+                                    alt="商品の画像"
+                                />
+                                <p class="item_list_title">特産りんご</p>
+                                <p class="item_price">1000円</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    class="item_img"
+                                    src="./images/apple.jpg"
+                                    alt="商品の画像"
+                                />
+                                <p class="item_list_title">特産りんご</p>
+                                <p class="item_price">1000円</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    class="item_img"
+                                    src="./images/apple.jpg"
+                                    alt="商品の画像"
+                                />
+                                <p class="item_list_title">特産りんご</p>
+                                <p class="item_price">1000円</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    class="item_img"
+                                    src="./images/apple.jpg"
+                                    alt="商品の画像"
+                                />
+                                <p class="item_list_title">特産りんご</p>
+                                <p class="item_price">1000円</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    class="item_img"
+                                    src="./images/apple.jpg"
+                                    alt="商品の画像"
+                                />
+                                <p class="item_list_title">特産りんご</p>
+                                <p class="item_price">1000円</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    class="item_img"
+                                    src="./images/apple.jpg"
+                                    alt="商品の画像"
+                                />
+                                <p class="item_list_title">特産りんご</p>
+                                <p class="item_price">1000円</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    class="item_img"
+                                    src="./images/apple.jpg"
+                                    alt="商品の画像"
+                                />
+                                <p class="item_list_title">特産りんご</p>
+                                <p class="item_price">1000円</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    class="item_img"
+                                    src="./images/apple.jpg"
+                                    alt="商品の画像"
+                                />
+                                <p class="item_list_title">特産りんご</p>
+                                <p class="item_price">1000円</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    class="item_img"
+                                    src="./images/apple.jpg"
+                                    alt="商品の画像"
+                                />
+                                <p class="item_list_title">特産りんご</p>
+                                <p class="item_price">1000円</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    class="item_img"
+                                    src="./images/apple.jpg"
+                                    alt="商品の画像"
+                                />
+                                <p class="item_list_title">特産りんご</p>
+                                <p class="item_price">1000円</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    class="item_img"
+                                    src="./images/apple.jpg"
+                                    alt="商品の画像"
+                                />
+                                <p class="item_list_title">特産りんご</p>
+                                <p class="item_price">1000円</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    class="item_img"
+                                    src="./images/apple.jpg"
+                                    alt="商品の画像"
+                                />
+                                <p class="item_list_title">特産りんご</p>
+                                <p class="item_price">1000円</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <footer class="footer">
+                <div class="container footer-container">
+                    <ul class="footer-navi">
                         <li class="line"><a href="#">トップ</a></li>
                         <li class="line"><a href="#">商品一覧</a></li>
                         <li class="line"><a href="#">買い物かご</a></li>
-                        <li class="line">
-                            <a href="http://localhost:55000/shared_shop/login"
-                                >ログイン</a
-                            >
-                        </li>
+                        <li class="line"><a href="#">注文一覧</a></li>
                     </ul>
+                    <small class="copyright">
+                        Copyright(C) System Shared co., ltd, ALL Rights Reserved
+                    </small>
                 </div>
-                <div class="header_content_bottom">
-                    <ul class="search_list">
-                        <li class="category">
-                            <a href="">カテゴリ検索</a>
-                            <!-- グローバルナビゲーション -->
-                            <ul class="gnavi_lists">
-                                <li class="gnavi_list">
-                                    <a href="#">カテゴリ</a>
-                                </li>
-                                <li class="gnavi_list">
-                                    <a href="#">カテゴリ</a>
-                                </li>
-                                <li class="gnavi_list">
-                                    <a href="#">カテゴリ</a>
-                                </li>
-                                <li class="gnavi_list">
-                                    <a href="#">カテゴリ</a>
-                                </li>
-                                <li class="gnavi_list">
-                                    <a href="#">カテゴリ</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="line"><a href="">セール品検索</a></li>
-                        <li class="line"><a href="">規格外商品検索</a></li>
-                    </ul>
+            </footer>
+
+            <div class="page-top-btn">
+                <div class="page-top-btn-link">
+                    <a href="#">↑</a>
                 </div>
             </div>
-        </header>
 
-        <section class="section section_item">
-            <div class="container item_container">
-                <div class="section_title">
-                    <h2 class="title item_title">商品一覧</h2>
-                    <div class="section_links">
-                        <a href="#">新着順</a>
-                        <a href="#">売上順</a>
-                    </div>
-                </div>
-                <ul class="item_list">
-                    <li>
-                        <a href="#">
-                            <img
-                                class="item_img"
-                                src="./images/apple.jpg"
-                                alt="商品の画像"
-                            />
-                            <p class="item_list_title">特産りんご</p>
-                            <p class="item_price">1000円</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img
-                                class="item_img"
-                                src="./images/apple.jpg"
-                                alt="商品の画像"
-                            />
-                            <p class="item_list_title">特産りんご</p>
-                            <p class="item_price">1000円</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img
-                                class="item_img"
-                                src="./images/apple.jpg"
-                                alt="商品の画像"
-                            />
-                            <p class="item_list_title">特産りんご</p>
-                            <p class="item_price">1000円</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img
-                                class="item_img"
-                                src="./images/apple.jpg"
-                                alt="商品の画像"
-                            />
-                            <p class="item_list_title">特産りんご</p>
-                            <p class="item_price">1000円</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img
-                                class="item_img"
-                                src="./images/apple.jpg"
-                                alt="商品の画像"
-                            />
-                            <p class="item_list_title">特産りんご</p>
-                            <p class="item_price">1000円</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img
-                                class="item_img"
-                                src="./images/apple.jpg"
-                                alt="商品の画像"
-                            />
-                            <p class="item_list_title">特産りんご</p>
-                            <p class="item_price">1000円</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img
-                                class="item_img"
-                                src="./images/apple.jpg"
-                                alt="商品の画像"
-                            />
-                            <p class="item_list_title">特産りんご</p>
-                            <p class="item_price">1000円</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img
-                                class="item_img"
-                                src="./images/apple.jpg"
-                                alt="商品の画像"
-                            />
-                            <p class="item_list_title">特産りんご</p>
-                            <p class="item_price">1000円</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img
-                                class="item_img"
-                                src="./images/apple.jpg"
-                                alt="商品の画像"
-                            />
-                            <p class="item_list_title">特産りんご</p>
-                            <p class="item_price">1000円</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img
-                                class="item_img"
-                                src="./images/apple.jpg"
-                                alt="商品の画像"
-                            />
-                            <p class="item_list_title">特産りんご</p>
-                            <p class="item_price">1000円</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img
-                                class="item_img"
-                                src="./images/apple.jpg"
-                                alt="商品の画像"
-                            />
-                            <p class="item_list_title">特産りんご</p>
-                            <p class="item_price">1000円</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img
-                                class="item_img"
-                                src="./images/apple.jpg"
-                                alt="商品の画像"
-                            />
-                            <p class="item_list_title">特産りんご</p>
-                            <p class="item_price">1000円</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="container footer-container">
-                <ul class="footer-navi">
-                    <li class="line"><a href="#">トップ</a></li>
-                    <li class="line"><a href="#">商品一覧</a></li>
-                    <li class="line"><a href="#">買い物かご</a></li>
-                    <li class="line"><a href="#">注文一覧</a></li>
-                </ul>
-                <small class="copyright">
-                    Copyright(C) System Shared co., ltd, ALL Rights Reserved
-                </small>
-            </div>
-        </footer>
-
-        <div class="page-top-btn">
-            <div class="page-top-btn-link">
-                <a href="#">↑</a>
-            </div>
         </div>
     </body>
 </html>

@@ -18,6 +18,8 @@
     width: 200px;
     height: 50px;
     overflow: hidden;
+    background: url(../images/a.gif) no-repeat;
+    background-size: contain;
 }
 
 .pace .pace-progress {
@@ -40,6 +42,7 @@
 .pace-progress-inner {
 	
 }
+
 
 .pace .pace-activity {
 }

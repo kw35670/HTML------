@@ -1,33 +1,40 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
 
+
+/***************************
+共通パーツ
+***************************/
+
 * {
-    font-family: "Zen Maru Gothic", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+	font-family: "Zen Maru Gothic", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
-	/* background: url(../images/a.gif) no-repeat; */
-}
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section {
-    margin-top: 50px;
-}
-
-.title {
 	
 }
 
+.container {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.section {
+	margin-top: 50px;
+}
+
+.title {}
+
 .line {
-    position: relative;
-    transition: ease 0.3s;
+	position: relative;
+	transition: ease 0.3s;
 }
 
 .line::before {
@@ -51,4 +58,238 @@ body {
 
 .displayNone {
 	display: none;
+}
+
+/***************************
+header
+***************************/
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	background-color: rgb(255, 194, 80);
+	height: 120px;
+	padding: 10px 0;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
+}
+
+.header_container {
+	height: 100%;
+}
+
+.header_content_top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.site_title {
+	color: white;
+}
+
+.search-form {
+	display: flex;
+	align-items: center;
+}
+
+.search-text {
+	padding: 5px;
+	border-radius: 15px;
+	border: solid 1px white;
+}
+
+.search-btn {
+	padding: 5px;
+	width: 50px;
+	background-color: rgb(255, 194, 80);
+	border: solid 2px white;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	transition: ease 0.3s;
+	margin-left: 5px;
+}
+
+.search-btn:hover {
+	color: rgb(255, 194, 80);
+	background-color: white;
+}
+
+.header_navi_area {
+	display: flex;
+}
+
+.header_navi_area li {}
+
+.header_navi_area li:not(:first-child) {
+	margin-left: 20px;
+}
+
+.header_navi_area li a {
+	color: white;
+	text-decoration: none;
+}
+
+.header_content_bottom {
+	margin-top: 20px;
+}
+
+.search_list {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.search_list li {}
+
+.category {
+	position: relative;
+}
+
+.category:hover .gnavi_lists {
+	transform: scaleY(1);
+}
+
+.search_list li:not(:first-child) {
+	margin-left: 55px;
+}
+
+.search_list li a {
+	color: white;
+	text-decoration: none;
+}
+
+/* グローバルナビゲーション */
+
+.gnavi_lists {
+	position: absolute;
+	/* padding: 5px; */
+	width: 100%;
+	top: 25px;
+	left: 0;
+	background-color: rgb(255, 194, 80);
+	transform: scaleY(0);
+	transform-origin: center top;
+	transition: all 0.3s;
+	border-radius: 5px;
+}
+
+.gnavi_list {
+	text-align: center;
+	margin-left: 0 !important;
+	height: 100%;
+	padding: 5px 0;
+	transition: ease 0.3s;
+}
+
+.gnavi_list:hover {
+	background-color: #fff;
+}
+
+.gnavi_list:hover a {
+	color: rgb(255, 194, 80);
+}
+
+.gnavi_list:hover .gnavi_lists {
+	transform: scaleY(1);
+}
+
+.gnavi_list:not(:first-child) {
+	border-top: solid white 1px;
+	width: 100%;
+}
+
+.gnavi_list a {
+	width: 100%;
+	transition: ease 0.3s;
+}
+
+.gnavi_list a:hover {}
+
+.gnavi_list a:hover .gnavi_list {}
+
+
+/***************************
+footer
+***************************/
+
+.footer {
+	position: relative;
+	background-color: rgb(255, 194, 80);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+.footer-container {}
+
+.footer-navi {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-navi li {}
+
+.footer-navi li:not(:first-child) {
+	margin-left: 40px;
+}
+
+.footer-navi li a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.copyright {
+	display: block;
+	margin-top: 30px;
+}
+
+
+/***************************
+ページトップボタン
+***************************/
+
+.page-top-btn {
+	position: fixed;
+	background-color: rgb(255, 194, 80);
+	width: 100px;
+	height: 100px;
+	bottom: 50px;
+	right: 50px;
+	cursor: pointer;
+	border-radius: 50%;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
+}
+
+.page-top-btn-link {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.page-top-btn-link a {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-decoration: none;
+	font-size: 50px;
+	transition: ease 0.3s;
+	border-radius: 50%;
+}
+
+.page-top-btn-link a:hover {
+	background-color: #fff;
+	color: rgb(255, 194, 80);
 }

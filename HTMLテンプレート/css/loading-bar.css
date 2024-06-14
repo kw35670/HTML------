@@ -11,14 +11,13 @@
     z-index: 2000;
     position: fixed;
     margin: auto;
-    top: 12px;
+    top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    width: 200px;
-    height: 50px;
-    overflow: hidden;
-    background: url(../images/a.gif) no-repeat;
+    bottom: 165px;
+    width: 150px;
+    height: 150px;
+    background: url(../images/かぼちゃ.gif) no-repeat;
     background-size: contain;
 }
 

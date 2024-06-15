@@ -120,18 +120,13 @@ itemList
     display: block;
     width: 25px;
     height: 25px;
-    border-top: solid 3px #828282;
-    border-right: solid 3px #828282;
+    border-top: solid 3px #fff;
+    border-right: solid 3px #fff;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     position: absolute;
     right: 15px;
     top: 10px;
-}
-
-.next:hover {
-    background-color: #fff;
-    transition: all 0.3s;
 }
 
 .prev {
@@ -150,18 +145,13 @@ itemList
     display: block;
     width: 25px;
     height: 25px;
-    border-top: solid 3px #828282;
-    border-right: solid 3px #828282;
+    border-top: solid 3px #fff;
+    border-right: solid 3px #fff;
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
     position: absolute;
     left: 15px;
     top: 10px;
-}
-
-.prev:hover {
-    background-color: #fff;
-    transition: all 0.3s;
 }
 
 .slider {
@@ -263,4 +253,81 @@ itemList
 
 #list1 {
     background-color: #ffaf58;
+}
+
+
+/***************************
+地域カードリスト
+***************************/
+
+.area-section {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.area-lists {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.area-list {
+    width: 49%;
+    padding: 20px;
+    border: solid 2px rgb(255, 194, 80);
+    border-radius: 10px;
+}
+
+.area-list:nth-child(n + 3) {
+    margin-top: 30px;
+}
+
+.area-title {
+    text-align: center;
+}
+
+.area-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.area-img {
+    width: 49%;
+}
+
+.area-img:nth-child(2n) {
+    /* margin-left: 1%; */
+}
+
+.area-img:nth-child(n + 3) {
+    margin-top: 10px;
+}
+
+.area-text {
+    margin-top: 20px;
+}
+
+.area-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.area-btn button {
+    width: 40%;
+    padding: 10px;
+    border: solid 1px rgb(255, 194, 80);
+    color: #fff;
+    background-color: rgb(255, 194, 80);
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.area-btn button:hover {
+    color: rgb(255, 194, 80);
+    background-color: #fff;
 }

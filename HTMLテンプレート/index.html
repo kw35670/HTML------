@@ -1,133 +1,204 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./css/common.css" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <link rel="stylesheet" type="text/css" href="./css/loading-bar.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css"
+        />
+        <!-- JavaScript -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"
+            defer
+        ></script>
+        <script src="./js/main.js" defer></script>
+        <title>商品一覧 | シェアードショップ</title>
+    </head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./css/common.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/loading-bar.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js" defer></script>
-    <script src="./js/main.js" defer></script>
-    <title>商品一覧 | シェアードショップ</title>
-</head>
+    <body id="body">
+        <div class="page-loader-container">
+            <header class="header">
+                <div class="container header_container">
+                    <div class="header_content_top">
+                        <h1 class="site_title">道見知 -DOMICIL-</h1>
+                        <form class="search-form" action="#" method="get">
+                            <input
+                                class="search-text"
+                                type="text"
+                                placeholder="検索"
+                            />
+                            <button class="search-btn" type="submit">
+                                検索
+                            </button>
+                        </form>
+                        <ul class="header_navi_area">
+                            <li class="line"><a href="#">トップ</a></li>
+                            <li class="line"><a href="#">商品一覧</a></li>
+                            <li class="line"><a href="#">買い物かご</a></li>
+                            <li class="line">
+                                <a
+                                    href="http://localhost:55000/shared_shop/login"
+                                    >ログイン</a
+                                >
+                            </li>
+                            <li class="line">
+                                <a
+                                    href="http://localhost:55000/shared_shop/login"
+                                    >新規登録</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header_content_bottom">
+                        <ul class="search_list">
+                            <li class="category">
+                                <a href="">カテゴリ検索</a>
+                                <!-- グローバルナビゲーション -->
+                                <ul class="gnavi_lists">
+                                    <li class="gnavi_list">
+                                        <a href="#">カテゴリ</a>
+                                    </li>
+                                    <li class="gnavi_list">
+                                        <a href="#">カテゴリ</a>
+                                    </li>
+                                    <li class="gnavi_list">
+                                        <a href="#">カテゴリ</a>
+                                    </li>
+                                    <li class="gnavi_list">
+                                        <a href="#">カテゴリ</a>
+                                    </li>
+                                    <li class="gnavi_list">
+                                        <a href="#">カテゴリ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="line"><a href="">セール品検索</a></li>
+                            <li class="line"><a href="">規格外商品検索</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
 
-<body id="body">
+            <div class="wrapper">
+                <span id="prev" class="prev"></span>
+                <span id="next" class="next"></span>
+                <ul class="indicator">
+                    <li class="list" id="list1"></li>
+                    <li class="list" id="list2"></li>
+                    <li class="list" id="list3"></li>
+                    <li class="list" id="list4"></li>
+                </ul>
 
-    <div class="page-loader-container">
+                <div id="slider" class="slider slider1">
+                    <div class="content content1">
+                        <a href="#">
+                            <img src="https://tobutoptours.jp/column/all/img/zekkei001/title.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="content content2">
+                        <a href="#">
+                            <img src="https://img01.jalannews.jp/img/2021/04/20210427_kirei-keshiki_051.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="content content3">
+                        <a href="#">
+                            <img src="https://www.nta.co.jp/media/tripa/static_contents/nta-tripa/articles/images/000/000/418/medium/8342c3cf-fbb8-402a-9bd8-37fd7f1b8c33.jpg?1550646782" alt="" />
+                        </a>
+                    </div>
+                    <div class="content content4">
+                        <a href="#">
+                            <img src="https://www.nta.co.jp/media/tripa/static_contents/nta-tripa/item_images/images/000/050/861/medium/f4ce5f8a-d42f-472c-92af-0e02f253d7a7.png?1550666388" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-        <header class="header">
-            <div class="container header_container">
-                <div class="header_content_top">
-                    <h1 class="site_title">道見知 -DOMICIL-</h1>
-                    <form class="search-form" action="#" method="get">
-                        <input class="search-text" type="text" placeholder="検索" />
-                        <button class="search-btn" type="submit">検索</button>
-                    </form>
-                    <ul class="header_navi_area">
+            <section class="section area-section">
+                <div class="container">
+                    <ul class="area-lists">
+                        <li class="area-list">
+                            <h2 class="area-title">道央エリア</h2>
+                            <div class="area-images">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                            </div>
+                            <p class="area-text">北海道の中心地・札幌をはじめとする道央エリア。都市と自然が融合し、近隣には気軽に行ける観光スポットが多い。新千歳空港からのアクセスも良く、初めての北海道ドライブにも最適。</p>
+                            <form action="#" method="get" class="area-btn">
+                                <button type="submit">商品一覧へ</button>
+                            </form>
+                        </li>
+                        <li class="area-list">
+                            <h2 class="area-title">道北エリア</h2>
+                            <div class="area-images">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                            </div>
+                            <p class="area-text">第2の都市・旭川や、美しい田園風景が広がる美瑛・富良野、最北端・稚内や利尻・礼文など、雄大な自然と海の幸に恵まれたエリア。フォトジェニックな絶景スポットが多い。</p>
+                            <form action="#" method="get" class="area-btn">
+                                <button type="submit">商品一覧へ</button>
+                            </form>
+                        </li>
+                        <li class="area-list">
+                            <h2 class="area-title">道南エリア</h2>
+                            <div class="area-images">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                            </div>
+                            <p class="area-text">美しい地形が特徴の函館山や異国情緒漂う街並みが人気の函館、日本最北の城下町松前、北前船交易の拠点として栄えた江差、豊富な魚介類を堪能できる奥尻など、歴史もグルメも楽しめる。</p>
+                            <form action="#" method="get" class="area-btn">
+                                <button type="submit">商品一覧へ</button>
+                            </form>
+                        </li>
+                        <li class="area-list">
+                            <h2 class="area-title">道東エリア</h2>
+                            <div class="area-images">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                                <img src="./images/common/no_image.jpg" alt="" class="area-img">
+                            </div>
+                            <p class="area-text">世界自然遺産の知床など、数多くの天然記念物の生息地として知られ、美しく雄大な自然環境に満ちた道東エリア。海辺や湖畔に位置する温泉地も個性豊か。北海道らしい大自然を堪能できる。</p>
+                            <form action="#" method="get" class="area-btn">
+                                <button type="submit">商品一覧へ</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container footer-container">
+                    <ul class="footer-navi">
                         <li class="line"><a href="#">トップ</a></li>
                         <li class="line"><a href="#">商品一覧</a></li>
                         <li class="line"><a href="#">買い物かご</a></li>
-                        <li class="line">
-                            <a href="http://localhost:55000/shared_shop/login">ログイン</a>
-                        </li>
+                        <li class="line"><a href="#">注文一覧</a></li>
                     </ul>
+                    <small class="copyright">
+                        Copyright(C) System Shared co., ltd, ALL Rights Reserved
+                    </small>
                 </div>
-                <div class="header_content_bottom">
-                    <ul class="search_list">
-                        <li class="category">
-                            <a href="">カテゴリ検索</a>
-                            <!-- グローバルナビゲーション -->
-                            <ul class="gnavi_lists">
-                                <li class="gnavi_list">
-                                    <a href="#">カテゴリ</a>
-                                </li>
-                                <li class="gnavi_list">
-                                    <a href="#">カテゴリ</a>
-                                </li>
-                                <li class="gnavi_list">
-                                    <a href="#">カテゴリ</a>
-                                </li>
-                                <li class="gnavi_list">
-                                    <a href="#">カテゴリ</a>
-                                </li>
-                                <li class="gnavi_list">
-                                    <a href="#">カテゴリ</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="line"><a href="">セール品検索</a></li>
-                        <li class="line"><a href="">規格外商品検索</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
+            </footer>
 
-        <div class="wrapper">
-            <span id="prev" class="prev"></span>
-            <span id="next" class="next"></span>
-            <ul class="indicator">
-                <li class="list" id="list1"></li>
-                <li class="list" id="list2"></li>
-                <li class="list" id="list3"></li>
-                <li class="list" id="list4"></li>
-            </ul>
-
-            <div id="slider" class="slider slider1">
-                <div class="content content1">
-                    <a href="#">
-                        <img src="./images/common/no_image.jpg" alt="">
-                    </a>
-                    
-                </div>
-                <div class="content content2">
-                    <a href="#">
-                        <img src="./images/common/no_image.jpg" alt="">
-                    </a>
-                   
-                </div>
-                <div class="content content3">
-                    <a href="#">
-                        <img src="./images/common/no_image.jpg" alt="">
-                    </a>
-                    
-                </div>
-                <div class="content content4">
-                    <a href="#">
-                        <img src="./images/common/no_image.jpg" alt="">
-                    </a>
-                    
+            <div class="page-top-btn">
+                <div class="page-top-btn-link">
+                    <a href="#">↑</a>
                 </div>
             </div>
         </div>
-
-        <footer class="footer">
-            <div class="container footer-container">
-                <ul class="footer-navi">
-                    <li class="line"><a href="#">トップ</a></li>
-                    <li class="line"><a href="#">商品一覧</a></li>
-                    <li class="line"><a href="#">買い物かご</a></li>
-                    <li class="line"><a href="#">注文一覧</a></li>
-                </ul>
-                <small class="copyright">
-                    Copyright(C) System Shared co., ltd, ALL Rights Reserved
-                </small>
-            </div>
-        </footer>
-
-        <div class="page-top-btn">
-            <div class="page-top-btn-link">
-                <a href="#">↑</a>
-            </div>
-        </div>
-
-    </div>
-</body>
-
+    </body>
 </html>

@@ -118,6 +118,30 @@
                             <td th:text="${orderItem.orderNum}">3</td>
                             <td th:text="${orderItem.subtotal}">300</td>
                         </tr>
+                        <tr th:each="orderItem: ${orderItemBeans}">
+                            <td th:text="${orderItem.name}">りんご</td>
+                            <td>
+                                <!-- <img th:src="@{/images/{image}(image=${orderItem.image})}"
+                                    th:if="${orderItem.image != null}" />
+                                <img th:src="@{/images/common/no_image.jpg}" th:if="${orderItem.image == null}" /> -->
+                                <img src="../images/common/apple.jpg" alt="">
+                            </td>
+                            <td th:text="${orderItem.price}">100</td>
+                            <td th:text="${orderItem.orderNum}">3</td>
+                            <td th:text="${orderItem.subtotal}">300</td>
+                        </tr>
+                        <tr th:each="orderItem: ${orderItemBeans}">
+                            <td th:text="${orderItem.name}">りんご</td>
+                            <td>
+                                <!-- <img th:src="@{/images/{image}(image=${orderItem.image})}"
+                                    th:if="${orderItem.image != null}" />
+                                <img th:src="@{/images/common/no_image.jpg}" th:if="${orderItem.image == null}" /> -->
+                                <img src="../images/common/apple.jpg" alt="">
+                            </td>
+                            <td th:text="${orderItem.price}">100</td>
+                            <td th:text="${orderItem.orderNum}">3</td>
+                            <td th:text="${orderItem.subtotal}">300</td>
+                        </tr>
                         <tr>
                             <td colspan="3"></td>
                             <td>[[#{data.point}]]</td>

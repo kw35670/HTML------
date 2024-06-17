@@ -8,7 +8,9 @@ itemList
     margin-top: 150px;
 }
 
-.item_container {}
+.item_container {
+
+}
 
 .section_title {
     display: flex;
@@ -403,6 +405,11 @@ itemList
     cursor: pointer;
 }
 
+.detail-send-button {
+    margin-top: 0 !important;
+    width: 100% !important;
+}
+
 .send_button:hover {
     color: rgb(255, 194, 80);
     background-color: #fff;
@@ -586,14 +593,26 @@ itemList
     width: 50px;
 }
 
+.address-send-button {
+
+}
+
+.address-send-button:hover {
+    color: rgb(255, 194, 80) !important;
+    background-color: #fff !important;
+    cursor: pointer;
+}
+
 .back_button-form {
     position: relative;
     width: 60%;
     margin: 0 auto;
-    bottom: 40px;
 }
 
-.back_button {
+.address-back-btn {
+    position: absolute;
+    top: -44px;
+    left: 0;
     width: 50px;
     margin-left: 20%;
 }
@@ -760,5 +779,83 @@ itemList
 }
 
 .check-back-btn {
+
+}
+
+/***************************
+注文登録確認画面
+***************************/
+
+.complete-section {
+    margin-top: 150px;
+}
+
+
+/***************************
+注文一覧画面
+***************************/
+
+.order-list-section {
+    margin-top: 150px;
+}
+
+.order-list-container {
+
+}
+
+.list_table {
+
+}
+
+.order {
+    margin-top: 20px;
+}
+
+.order tr {
+
+}
+
+.order tr th {
+
+}
+
+.order tr td {
+
+}
+
+.order tr td span {
+
+}
+
+/***************************
+注文詳細画面
+***************************/
+
+.order-detail-section {
+    margin-top: 150px;
+}
+
+.order-detail-container {
+
+}
+
+.order-detail_title {
+
+}
+
+.payment {
+    margin-top: 20px;
+}
+
+.detail {
+    margin-top: 20px;
+}
+
+.detail_button_area {
+    width: 10%;
+    margin-top: 20px;
+}
+
+.order-detail-btn {
 
 }

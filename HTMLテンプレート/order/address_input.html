@@ -110,11 +110,11 @@
                         <div class="send-btn-container">
                             <input type="hidden" th:field="*{id}" />
                             <input type="hidden" th:field="*{payMethod}" />
-                            <input type="submit" value="次へ" class="send_button" />
+                            <input type="submit" value="次へ" class="send_button address-send-button" />
                         </div>
                     </form>
                     <form th:action="@{/client/basket/list}" method="post" class="back_button-form">
-                        <input type="submit" value="戻る" class="back_button" />
+                        <input type="submit" value="戻る" class="back_button address-back-btn" />
                     </form>
                 </div>
             </section>

@@ -9,7 +9,6 @@ itemList
 }
 
 .item_container {
-
 }
 
 .section_title {
@@ -30,7 +29,8 @@ itemList
     color: #494949;
 }
 
-.section_links {}
+.section_links {
+}
 
 .section_links a {
     color: #494949;
@@ -89,9 +89,7 @@ itemList
 }
 
 .item_price {
-
 }
-
 
 /***************************
 スライドショー
@@ -118,7 +116,7 @@ itemList
 }
 
 .next::after {
-    content: "";
+    content: '';
     display: block;
     width: 25px;
     height: 25px;
@@ -143,7 +141,7 @@ itemList
 }
 
 .prev::after {
-    content: "";
+    content: '';
     display: block;
     width: 25px;
     height: 25px;
@@ -242,7 +240,7 @@ itemList
 }
 
 .list:after {
-    content: "";
+    content: '';
     width: 20px;
     height: 20px;
     /* border: 1px #000 solid; */
@@ -256,7 +254,6 @@ itemList
 #list1 {
     background-color: #ffaf58;
 }
-
 
 /***************************
 地域カードリスト
@@ -334,7 +331,6 @@ itemList
     background-color: #fff;
 }
 
-
 /***************************
 商品詳細
 ***************************/
@@ -344,15 +340,12 @@ itemList
 }
 
 .container-detail {
-
 }
 
 .detail_title {
-
 }
 
 .info_form_area {
-
 }
 
 .item_detail_area {
@@ -434,13 +427,11 @@ itemList
     background-color: rgb(255, 194, 80);
 }
 
-
 /***************************
 買い物かごリスト
 ***************************/
 
 .basket-section {
-
 }
 
 .basket-container {
@@ -458,7 +449,6 @@ itemList
 }
 
 .basket-table tr {
-    
 }
 
 .basket-table tr th {
@@ -506,7 +496,6 @@ itemList
 }
 
 .basket-form-delete {
-
 }
 
 .basket-form-order {
@@ -531,7 +520,6 @@ itemList
     border-color: rgb(255, 194, 80);
 }
 
-
 /***************************
 届け先入力画面
 ***************************/
@@ -541,7 +529,6 @@ itemList
 }
 
 .address-container {
-
 }
 
 .address-form {
@@ -562,7 +549,6 @@ itemList
 }
 
 .input_list li label {
-
 }
 
 .input_list li input {
@@ -580,7 +566,6 @@ itemList
 }
 
 .input_title {
-
 }
 
 .send-btn-container {
@@ -594,7 +579,6 @@ itemList
 }
 
 .address-send-button {
-
 }
 
 .address-send-button:hover {
@@ -617,7 +601,6 @@ itemList
     margin-left: 20%;
 }
 
-
 /***************************
 支払方法選択画面
 ***************************/
@@ -627,7 +610,6 @@ itemList
 }
 
 .container-payment {
-
 }
 
 .user_info_form_area {
@@ -636,11 +618,9 @@ itemList
 }
 
 .payment-form {
-
 }
 
 .payment_method_select {
-
 }
 
 .payment_method_select li {
@@ -648,7 +628,6 @@ itemList
 }
 
 .radio_label {
-
 }
 
 .radio_label input {
@@ -667,13 +646,11 @@ itemList
 }
 
 .back_button-form {
-
 }
 
 .back_button-payment {
     margin-left: -20%;
 }
-
 
 /***************************
 注文内容確認画面
@@ -690,7 +667,6 @@ itemList
 }
 
 .item_detail {
-
 }
 
 .list_table tr {
@@ -723,11 +699,9 @@ itemList
 }
 
 .detail_table {
-
 }
 
 .address {
-    
 }
 
 .table_caption {
@@ -735,7 +709,6 @@ itemList
 }
 
 .detail_table tr {
-    
 }
 
 .detail_table tr th {
@@ -751,7 +724,6 @@ itemList
 }
 
 .detail_table {
-
 }
 
 .pay {
@@ -775,11 +747,9 @@ itemList
 }
 
 .back-btn-form {
-
 }
 
 .check-back-btn {
-
 }
 
 /***************************
@@ -790,7 +760,6 @@ itemList
     margin-top: 150px;
 }
 
-
 /***************************
 注文一覧画面
 ***************************/
@@ -800,11 +769,9 @@ itemList
 }
 
 .order-list-container {
-
 }
 
 .list_table {
-
 }
 
 .order {
@@ -812,19 +779,15 @@ itemList
 }
 
 .order tr {
-
 }
 
 .order tr th {
-
 }
 
 .order tr td {
-
 }
 
 .order tr td span {
-
 }
 
 /***************************
@@ -836,11 +799,9 @@ itemList
 }
 
 .order-detail-container {
-
 }
 
 .order-detail_title {
-
 }
 
 .payment {
@@ -857,5 +818,211 @@ itemList
 }
 
 .order-detail-btn {
+}
 
+/***************************
+会員詳細画面
+***************************/
+
+.user-detail-section {
+    margin-top: 150px;
+}
+
+.user-detail-container {
+}
+
+.user-detail_title {
+}
+
+.order-user-form {
+    width: 40%;
+    margin: 20px auto 0;
+}
+
+.detail_area {
+}
+
+.input_title {
+}
+
+.input_value {
+    margin-left: 20px;
+}
+
+.user-detail-area {
+    justify-content: flex-start;
+}
+
+.user-update-btn {
+    margin-left: 20px;
+}
+
+.user-update-btn input {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px rgb(255, 194, 80);
+    color: rgb(255, 194, 80);
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.user-update-btn input:hover {
+    color: #fff;
+    background-color: rgb(255, 194, 80);
+}
+
+.user-delete-btn {
+    margin-left: 20px;
+}
+
+.user-delete-btn input {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px rgb(255, 194, 80);
+    color: rgb(255, 194, 80);
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.user-delete-btn input:hover {
+    color: #fff;
+    background-color: rgb(255, 194, 80);
+}
+
+/***************************
+会員退会確認画面
+***************************/
+
+.user-delete-section {
+    margin-top: 150px;
+}
+
+.user-delete-container {
+}
+
+.user-delete_title {
+}
+
+.user-delete-area {
+}
+
+.user-delete-forms {
+    display: flex;
+    margin-top: 30px;
+}
+
+.user-delete-back {
+    width: 50px;
+}
+
+.user-delete-btn {
+    margin-top: 0;
+}
+
+/***************************
+会員退会確認画面
+***************************/
+
+.user-complete-section {
+    margin-top: 150px;
+}
+
+.user-complete-container {
+}
+
+.user-complete-title {
+    margin-bottom: 20px;
+}
+
+/***************************
+会員登録画面
+***************************/
+
+.user-regist-section {
+    margin-top: 150px;
+}
+
+.user-regist-container {
+}
+
+.user-regist-area {
+    width: 60%;
+}
+
+.user-regist-form {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 70%;
+}
+
+.user-regist-btn {
+    width: 50px;
+    padding: 10px;
+    border: solid 1px rgb(255, 194, 80);
+    color: #fff;
+    background-color: rgb(255, 194, 80);
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.user-regist-btn:hover {
+    color: rgb(255, 194, 80);
+    background-color: #fff;
+}
+
+.user-regist-back-form {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.user-regist-back {
+    position: absolute;
+    top: -44px;
+    left: 0;
+    width: 50px;
+    margin-left: 20%;
+}
+
+/***************************
+会員登録確認画面
+***************************/
+
+.user-regist-check-section {
+    margin-top: 150px;
+}
+
+.user-regist-check-container {
+}
+
+.user-check-forms {
+    display: flex;
+    margin-top: 20px;
+}
+
+.user-check-forms input {
+    margin-top: 0;
+}
+
+/***************************
+会員登録確認画面
+***************************/
+
+.user-regist-complete-section {
+    margin-top: 150px;
+}
+
+.user-regist-complete-container {
+}
+
+.user-regist-complete_title {
+}
+
+.use-regist-complete-title {
+    margin-bottom: 20px;
 }

@@ -681,6 +681,7 @@ itemList
 .list_table tr th {
     background-color: rgb(255, 194, 80);
     border: solid 1px rgb(255, 194, 80);
+    padding: 5px;
 }
 
 .list_table tr td {

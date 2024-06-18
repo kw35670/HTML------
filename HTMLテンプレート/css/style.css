@@ -861,16 +861,16 @@ itemList
     width: 100%;
     padding: 10px;
     border: solid 1px rgb(255, 194, 80);
-    color: rgb(255, 194, 80);
-    background-color: #fff;
+    color: #fff;
+    background-color: rgb(255, 194, 80);
     border-radius: 10px;
     transition: all ease 0.3s;
     cursor: pointer;
 }
 
 .user-update-btn input:hover {
-    color: #fff;
-    background-color: rgb(255, 194, 80);
+    color: rgb(255, 194, 80);
+    background-color: #fff;
 }
 
 .user-delete-btn {
@@ -881,16 +881,16 @@ itemList
     width: 100%;
     padding: 10px;
     border: solid 1px rgb(255, 194, 80);
-    color: rgb(255, 194, 80);
-    background-color: #fff;
+    color: #fff;
+    background-color: rgb(255, 194, 80);
     border-radius: 10px;
     transition: all ease 0.3s;
     cursor: pointer;
 }
 
 .user-delete-btn input:hover {
-    color: #fff;
-    background-color: rgb(255, 194, 80);
+    color: rgb(255, 194, 80);
+    background-color: #fff;
 }
 
 /***************************
@@ -1025,4 +1025,147 @@ itemList
 
 .use-regist-complete-title {
     margin-bottom: 20px;
+}
+
+
+/***************************
+会員変更画面
+***************************/
+
+.user-update-section {
+    margin-top: 150px;
+}
+
+.user-update-container {
+
+}
+
+.user-update-area {
+    width: 60%;
+}
+
+.user-update-form {
+    margin-left: 0;
+}
+
+.user-update-btn-form {
+    margin-top: 20px;
+    margin-left: 70%;
+}
+
+.user-update-btn-form input {
+    
+}
+
+.user-update-back-btn-form {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.user-update-back-btn-form input {
+    position: absolute;
+    top: -44px;
+    left: 0;
+    width: 50px;
+}
+
+
+/***************************
+会員変更確認画面
+***************************/
+
+.user-update-check-section {
+    margin-top: 150px;
+}
+
+.user-update-check-container {
+
+}
+
+.user-update-check_title {
+
+}
+
+.user-update-check-forms {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.user-update-check-btn {
+    margin-left: 30px;
+}
+
+.user-update-check-btn input {
+    margin-top: 0;
+}
+
+
+/***************************
+会員変更完了画面
+***************************/
+
+.section-update-title {
+    margin-bottom: 30px;
+}
+
+
+/***************************
+ログイン画面
+***************************/
+
+.section-login {
+    margin-top: 150px;
+}
+
+.login-container {
+
+}
+
+.login_content {
+
+}
+
+.login_form_area {
+
+}
+
+.login-table {
+    margin: 0 auto;
+}
+
+.login-table tbody tr {
+    
+}
+
+.login-table tbody tr th {
+    padding: 10px;
+}
+
+.login_form {
+
+}
+
+.login-input {
+}
+
+.login-input input {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.login-btn {
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(255, 194, 80);
+    border-radius: 5px;
+    border: solid 1px rgb(255, 194, 80);
+    transition: ease 0.3s;
+}
+
+.login-btn:hover {
+    color: rgb(255, 194, 80);
+    background-color: #fff;
 }

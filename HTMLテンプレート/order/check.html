@@ -118,63 +118,29 @@
                             <td th:text="${orderItem.orderNum}">3</td>
                             <td th:text="${orderItem.subtotal}">300</td>
                         </tr>
-                        <tr th:each="orderItem: ${orderItemBeans}">
-                            <td th:text="${orderItem.name}">りんご</td>
-                            <td>
-                                <!-- <img th:src="@{/images/{image}(image=${orderItem.image})}"
-                                    th:if="${orderItem.image != null}" />
-                                <img th:src="@{/images/common/no_image.jpg}" th:if="${orderItem.image == null}" /> -->
-                                <img src="../images/common/apple.jpg" alt="">
-                            </td>
-                            <td th:text="${orderItem.price}">100</td>
-                            <td th:text="${orderItem.orderNum}">3</td>
-                            <td th:text="${orderItem.subtotal}">300</td>
-                        </tr>
-                        <tr th:each="orderItem: ${orderItemBeans}">
-                            <td th:text="${orderItem.name}">りんご</td>
-                            <td>
-                                <!-- <img th:src="@{/images/{image}(image=${orderItem.image})}"
-                                    th:if="${orderItem.image != null}" />
-                                <img th:src="@{/images/common/no_image.jpg}" th:if="${orderItem.image == null}" /> -->
-                                <img src="../images/common/apple.jpg" alt="">
-                            </td>
-                            <td th:text="${orderItem.price}">100</td>
-                            <td th:text="${orderItem.orderNum}">3</td>
-                            <td th:text="${orderItem.subtotal}">300</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3"></td>
-                            <td>[[#{data.point}]]</td>
-                            <td class="total" th:text="${-orderForm.point}">100</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3"></td>
-                            <td class="total">[[#{data.total}]]</td>
-                            <td class="total" th:text="${total}">200</td>
-                        </tr>
                     </table>
                     <div class="user_info_form_area2">
                         <table class="detail_table address">
                             <caption class="table_caption">[[#{data.address}]]</caption>
                             <tr>
                                 <th>[[#{data.address.postalcode}]]</th>
-                                <td th:text="${orderForm.postalCode}">111111</td>
+                                <td th:text="${orderForm.postalCode}"></td>
                             </tr>
                             <tr>
                                 <th>[[#{data.address.address}]]</th>
-                                <td th:text="${orderForm.address}">札幌市南区あああああああああああああああああ</td>
+                                <td th:text="${orderForm.address}"></td>
                             </tr>
                             <tr>
                                 <th>[[#{data.address.name}]]</th>
-                                <td th:text="${orderForm.name}">ぐちかわ</td>
+                                <td th:text="${orderForm.name}"></td>
                             </tr>
                             <tr>
                                 <th>[[#{data.address.phonenumber}]]</th>
-                                <td th:text="${orderForm.phoneNumber}">1234567890</td>
+                                <td th:text="${orderForm.phoneNumber}"></td>
                             </tr>
                         </table>
                         <table class="detail_table pay">
-                            <caption class="table_caption">[[#{paymethod.str}]]</caption>
+                            <caption class="table_caption"></caption>
                             <tr>
                                 <th>[[#{paymethod.str}]]</th>
                                 <td th:switch="${orderForm.payMethod}">
